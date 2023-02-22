@@ -4,16 +4,19 @@ import { classNames } from "shared/lib/classNames/classNames";
 import { AppRouter } from "./providers/router";
 import { Navbar } from "widgets/Navbar";
 import { Sydebar } from "widgets/Sydebar";
+import { Suspense } from "react";
 
 export default function App() {
   const { theme } = useTheme();
   return (
     <div className={classNames("app", {}, [theme])}>
-      <Navbar />
-      <div className="content-page">
-        <Sydebar />
-        <AppRouter />
-      </div>
+      <Suspense fallback="">
+        <Navbar />
+        <div className="content-page">
+          <Sydebar />
+          <AppRouter />
+        </div>
+      </Suspense>
     </div>
   );
 }

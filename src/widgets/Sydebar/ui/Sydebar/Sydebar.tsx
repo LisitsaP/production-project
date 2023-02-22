@@ -2,6 +2,7 @@ import { useState } from "react";
 import { classNames } from "shared/lib/classNames/classNames";
 import cls from "./Sydebar.module.scss";
 import { ThemeSwitcher } from "shared/ui/ThemeSwitcher";
+import { LangSwitcher } from "shared/ui/LangSwitcher/LangSwitcher";
 
 interface SydebarProps {
   className?: string;
@@ -22,7 +23,7 @@ export const Sydebar: React.FC<SydebarProps> = (props) => {
       <button onClick={onToggle}>toggle</button>
       <div className={cls.switchers}>
         <ThemeSwitcher />
-        {/* LangSwitcher */}
+        <LangSwitcher className={cls.lang} />
       </div>
     </div>
   );
