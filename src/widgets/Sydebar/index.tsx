@@ -1,3 +1,3 @@
-import { Sydebar } from "./ui/Sydebar/Sydebar";
+import { Sydebar } from './ui/Sydebar/Sydebar';
 
 export { Sydebar };
