@@ -1,8 +1,9 @@
 {
-  "About": "",
   "Language": "Ru",
-  "Main page": "",
   "Test example": "Test example",
   "Translation": "Translation",
-  "page-not-found": "Page not found"
+  "page-not-found": "Page not found",
+  "Error": "Error",
+  "refresh-the-page": "refresh the page",
+  "throw-error": "throw error"
 }
