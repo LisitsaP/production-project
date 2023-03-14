@@ -49,7 +49,7 @@ module.exports = {
         'react/prop-types': 'warn',
         'i18next/no-literal-string': ['error', { markupOnly: true }],
         'linebreak-style': 'off',
-        'max-len': ['error', { ignoreComments: true }],
+        'max-len': ['error', { ignoreComments: true, code: 120 }],
 
     },
     globals: {
