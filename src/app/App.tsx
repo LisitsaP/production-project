@@ -2,8 +2,8 @@ import './styles/index.scss';
 import { useTheme } from 'app/providers/ThemeProvider';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Navbar } from 'widgets/Navbar';
-import { Sydebar } from 'widgets/Sydebar';
-import { Suspense, useEffect } from 'react';
+import { Sidebar } from 'widgets/Sidebar/ui/Sidebar/Sidebar';
+import { Suspense } from 'react';
 import { AppRouter } from './providers/router';
 
 export default function App() {
@@ -14,7 +14,7 @@ export default function App() {
             <Suspense fallback="">
                 <Navbar />
                 <div className="content-page">
-                    <Sydebar />
+                    <Sidebar />
                     <AppRouter />
                 </div>
             </Suspense>
