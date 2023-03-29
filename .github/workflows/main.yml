@@ -7,10 +7,10 @@ on:
   branches: [master]
 jobs:
   pipleline:
-  runs-on: ubuntu -lastest
+  runs-on: ubuntu-latest
   strategy:
-  matrix:
-  node-version: [17.x]
+    matrix:
+      node-version: [ 17.x ]
 
     steps:
       - user: actions/checkout@v2
