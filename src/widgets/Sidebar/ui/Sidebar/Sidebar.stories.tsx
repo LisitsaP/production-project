@@ -4,14 +4,14 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import 'app/styles/index.scss';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/TemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
-import { Sidebar} from "./Sidebar"
+import { Sidebar } from './Sidebar';
 
 export default {
-  title: 'widgets/Sidebar',
-  component: Sidebar,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+    title: 'widgets/Sidebar',
+    component: Sidebar,
+    argTypes: {
+        backgroundColor: { control: 'color' },
+    },
 } as ComponentMeta<typeof Sidebar>;
 
 const Template: ComponentStory<typeof Sidebar> = (args) => <Sidebar {...args} />;
@@ -22,4 +22,4 @@ Light.args = {};
 export const Dark = Template.bind({});
 Dark.args = {};
 
-Dark.decorators = [ThemeDecorator(Theme.DARK)]
+Dark.decorators = [ThemeDecorator(Theme.DARK)];

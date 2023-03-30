@@ -5,5 +5,8 @@
   "page-not-found": "Page not found",
   "Error": "Error",
   "refresh-the-page": "refresh the page",
-  "throw-error": "throw error"
+  "throw-error": "throw error",
+  "home": "Home",
+  "toggle": "Toggle",
+  "about": "About"
 }

@@ -4,17 +4,17 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import 'app/styles/index.scss';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/TemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
-import { ThemeSwitcher} from "./ThemeSwitcher"
+import { ThemeSwitcher } from './ThemeSwitcher';
 
 export default {
-  title: 'widgets/ThemeSwitcher',
-  component: ThemeSwitcher,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
-  args: {
-    to: '/',
-  }
+    title: 'widgets/ThemeSwitcher',
+    component: ThemeSwitcher,
+    argTypes: {
+        backgroundColor: { control: 'color' },
+    },
+    args: {
+        to: '/',
+    },
 } as ComponentMeta<typeof ThemeSwitcher>;
 
 const Template: ComponentStory<typeof ThemeSwitcher> = (args) => <ThemeSwitcher {...args} />;
@@ -27,5 +27,3 @@ export const Dark = Template.bind({});
 Dark.args = {
 };
 Dark.decorators = [ThemeDecorator(Theme.DARK)];
-
-

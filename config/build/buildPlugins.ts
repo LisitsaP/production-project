@@ -20,11 +20,10 @@ export function buildPlugins({
         new webpack.DefinePlugin({
             __IS_DEV: JSON.stringify(isDev),
         }),
-    ]
-    if(isDev) {
-
-        plugins.push( new webpack.HotModuleReplacementPlugin());
-        plugins.push( new BundleAnalyzerPlugin({
+    ];
+    if (isDev) {
+        plugins.push(new webpack.HotModuleReplacementPlugin());
+        plugins.push(new BundleAnalyzerPlugin({
             openAnalyzer: false,
         }));
     }

@@ -4,20 +4,20 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import 'app/styles/index.scss';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/TemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
-import MainPage from './MainPage'
+import MainPage from './MainPage';
 
 export default {
-  title: 'pages/MainPage',
-  component: MainPage,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
-  args: {
-    to: '/',
-  }
+    title: 'pages/MainPage',
+    component: MainPage,
+    argTypes: {
+        backgroundColor: { control: 'color' },
+    },
+    args: {
+        to: '/',
+    },
 } as ComponentMeta<typeof MainPage>;
 
-const Template: ComponentStory<typeof MainPage> = (args) => <MainPage/>;
+const Template: ComponentStory<typeof MainPage> = (args) => <MainPage />;
 
 export const Normal = Template.bind({});
 Normal.args = {
